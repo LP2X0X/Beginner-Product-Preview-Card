@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <title>Product preview card component</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <!-- Learn responsive image here -->
+        <img   
+          srcset="./images/image-product-mobile.jpg 686w,
+            ./images/image-product-desktop.jpg 600w"
+          sizes="(max-width: 600px) 686px,
+           300px"
+          alt="Product"
+          class="container__product-image"/>
+        <section class="content">
+          <span class="content__product-type">PERFUME</span>
+          <h1 class="content__header_1">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="content__introduction">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+        </section>    
+        <section class="container__prices">
+          <span class="prices__discount-price">$149.99</span>
+          <span class="prices__original-price">$169.99</span>
+        </section>
+        <button class="container__add-to-cart-button">
+          <img class="add-to-cart-button__icon" src="./images/icon-cart.svg" alt="">
+          <p class="add-to-cart-button__text">Add to Cart</p>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

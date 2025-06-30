@@ -1,0 +1,135 @@
+/* Implement mobile first design */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+/* Center the container element without using the container's properties */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Since the size of the container is small in height, set this help center it */
+}
+
+.container {
+  background-color: white;
+  overflow: hidden; /* this clips the image inside the border radius */
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  width: 37.5rem;
+  box-sizing: border-box;
+}
+
+.container__product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.75rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.875rem;
+}
+
+.content__product-type {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3rem;
+  /* Change spacing between letters */
+  line-height: 1;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.content__header_1 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 0.3125rem;
+}
+
+.content__introduction {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: hsl(228, 12%, 48%);
+}
+
+.container__prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+.prices__discount-price {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 1.25rem;
+}
+
+.prices__original-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8125rem;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.container__add-to-cart-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-left: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  margin-right: 1.5rem;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.container__add-to-cart-button:hover {
+  cursor: pointer;
+  background-color: hsl(158, 42%, 18%);
+}
+
+.add-to-cart-button__text {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 37.5rem) {
+  .container {
+    width: 22.5rem;
+  }
+}
+
+@media (min-width: 37.5625rem) {
+  .container {
+    flex-direction: row;
+  }
+}
