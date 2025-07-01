@@ -165,7 +165,7 @@ main {
   }
 
   .container__product-image {
-    width: 300px;
+    width: 18.75rem;
   }
 
   .information__content {
@@ -176,10 +176,17 @@ main {
   }
 
   .information__prices {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
 
   .content__product-name {
     margin-bottom: 0.625rem;
+  }
+
+  .information__add-to-cart-button {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
   }
 }
