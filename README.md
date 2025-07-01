@@ -20,3 +20,5 @@
 - I learned about mobile-first and desktop-first approach concepts and practiced the mobile-first approach by writing base styles for small screens first, then using media queries to adapt the layout for larger screens.
 
 - I started using custom properties for defining consistent design tokens such as colors and fonts.
+
+- I also learned that the `<img>` element still requires a `src` attribute even when using `srcset` and `sizes`, and that the `<button>` element should include a `type` attribute to ensure proper behavior.
